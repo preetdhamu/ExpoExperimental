@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Android",
+      "request": "launch",
+      "type": "reactnative",
+      "platform": "android",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["expo", "start"]
+    },
+    {
+      "name": "Debug iOS",
+      "request": "launch",
+      "type": "reactnative",
+      "platform": "ios",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["expo", "start"]
+    },
+    {
+      "name": "Attach to Packager",
+      "request": "attach",
+      "type": "reactnative",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["expo", "start"]
+    },
+    {
+      "name": "Debug Expo",
+      "request": "launch",
+      "type": "reactnative",
+      "expo": true,
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "npx ",
+      "runtimeArgs": ["expo", "start"]
+    }
+  ]
+}
